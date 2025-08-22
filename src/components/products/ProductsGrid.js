@@ -227,7 +227,7 @@ export default function ProductsGrid() {
           {filteredProducts.map((product) => (
             <div key={product.id} className="group relative">
               <img
-                alt={product.product_name}
+                alt={product.product_name || "Product Image"}
                 src={product.img_url}
                 className="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
               />
